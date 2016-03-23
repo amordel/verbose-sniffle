@@ -2,28 +2,21 @@
     "compilerOptions": {
         "target": "es5",
         "module": "commonjs",
-        "moduleResolution": "node",
+        "moduleResolution": "classic",
         "isolatedModules": false,
         "jsx": "react",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "declaration": false,
-        "noImplicitAny": false,
-        "noImplicitUseStrict": false,
+        "noImplicitAny": true,
         "removeComments": true,
         "noLib": false,
         "preserveConstEnums": true,
-        "suppressImplicitAnyIndexErrors": true
+        "suppressImplicitAnyIndexErrors": false
     },
-    "exclude": [
-        "node_modules",
-        "typings/browser",
-        "typings/browser.d.ts",
-        "typings/main",
-        "typings/main.d.ts"
-    ],
     "compileOnSave": true,
     "buildOnSave": false,
+    "exclude": ["node_modules", "typings", "public/js"],
     "atom": {
         "rewriteTsconfig": false
     }
