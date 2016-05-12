@@ -8,6 +8,7 @@ export class WebServer {
         this.configure();
     }
     public configure() : void {
+        console.log(site.config);
         this.app.get("/", (req : express.Request, res : express.Response) => {
             res.send("Hello world!");
         });

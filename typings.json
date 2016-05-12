@@ -2,6 +2,7 @@
   "ambientDependencies": {
     "es6-shim": "registry:dt/es6-shim#0.31.2+20160317120654",
     "express": "github:DefinitelyTyped/DefinitelyTyped/express/express.d.ts#dd4626a4e23ce8d6d175e0fe8244a99771c8c3f2",
+    "mysql": "registry:dt/mysql#0.0.0+20160316155526",
     "node": "registry:dt/node#4.0.0+20160319033040"
   }
 }
