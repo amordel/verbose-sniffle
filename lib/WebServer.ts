@@ -1,4 +1,5 @@
-import * as site from "./autoload";
+/// <reference path="../typings/main.d.ts"/>
+import * as fs from "fs";
 import * as express from "express";
 
 export class WebServer {
@@ -8,9 +9,14 @@ export class WebServer {
         this.configure();
     }
     public configure() : void {
-        console.log(site.config);
-        this.app.get("/", (req : express.Request, res : express.Response) => {
-            res.send("Hello world!");
+        this.app.set("view engine", "pug");
+        this.app.set("views", "views");
+        this.app.all("*", (req : express.Request, res : express.Response) => {
+            if (req.path == "/") {
+                res.render("index");
+            } else if (req.path == "/compare") {
+                require("../models/compare.js").render(req, res);
+            }
         });
     }
     public start() : void {
