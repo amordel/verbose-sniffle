@@ -1,8 +1,11 @@
 {
-  "ambientDependencies": {
+  "globalDependencies": {
     "es6-shim": "registry:dt/es6-shim#0.31.2+20160317120654",
     "express": "github:DefinitelyTyped/DefinitelyTyped/express/express.d.ts#dd4626a4e23ce8d6d175e0fe8244a99771c8c3f2",
+    "express-serve-static-core": "registry:dt/express-serve-static-core#0.0.0+20160322035842",
+    "mime": "registry:dt/mime#0.0.0+20160316155526",
     "mysql": "registry:dt/mysql#0.0.0+20160316155526",
-    "node": "registry:dt/node#4.0.0+20160319033040"
+    "node": "registry:dt/node#4.0.0+20160319033040",
+    "serve-static": "registry:dt/serve-static#0.0.0+20160501131543"
   }
 }
